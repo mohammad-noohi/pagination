@@ -100,4 +100,12 @@ function pageGenerator(allUsersArray, pagination, rows) {
 }
 pageGenerator(usersDataBase, pagination, rows);
 
-
+/* set special number of user in each page */
+pageNumberInput.addEventListener("change", function (event) {
+  rows = event.target.value;
+  // set current page to default to void a bug
+  currentPage = 1 ;
+  userItemGenerator(usersDataBase, usersList, rows, currentPage);
+  pagination.innerHTML = "";
+  pageGenerator(usersDataBase, pagination, rows);
+});

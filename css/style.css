@@ -70,7 +70,23 @@ body {
   cursor: pointer;
 }
 
+/* CHOOSE USERS COUNT */
+.choose-user-count{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.choose-user-count input[type='number']{
+  width: 7rem;
+  height: 3rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  background: #ededed;
+  border-radius: 0.4rem;
+}
 
 .users-list {
   list-style-type: none;
